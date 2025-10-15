@@ -1,0 +1,1440 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6C36EDD7-174A-46D1-A83C-0E8F54CD68DE}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>IREL</RootNamespace>
+    <AssemblyName>IREL</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit">
+      <HintPath>\\192.168.30.4\eSoft-Sharing\Vamshi\IREL\IREL_BIN\bin\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="AjaxMin">
+      <HintPath>\\192.168.30.4\eSoft-Sharing\Vamshi\IREL\IREL_BIN\bin\AjaxMin.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <HintPath>\\192.168.30.4\eSoft-Sharing\Vamshi\IREL\IREL_BIN\bin\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="AspNet.ScriptManager.jQuery">
+      <HintPath>\\192.168.30.4\eSoft-Sharing\Vamshi\IREL\IREL_BIN\bin\AspNet.ScriptManager.jQuery.dll</HintPath>
+    </Reference>
+    <Reference Include="AspNet.ScriptManager.jQuery.UI.Combined">
+      <HintPath>\\192.168.30.4\eSoft-Sharing\Vamshi\IREL\IREL_BIN\bin\AspNet.ScriptManager.jQuery.UI.Combined.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.AspNet">
+      <HintPath>\\192.168.30.4\eSoft-Sharing\Vamshi\IREL\IREL_BIN\bin\DotNetOpenAuth.AspNet.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.Core">
+      <HintPath>\\192.168.30.4\eSoft-Sharing\Vamshi\IREL\IREL_BIN\bin\DotNetOpenAuth.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OAuth">
+      <HintPath>\\192.168.30.4\eSoft-Sharing\Vamshi\IREL\IREL_BIN\bin\DotNetOpenAuth.OAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OAuth.Consumer">
+      <HintPath>\\192.168.30.4\eSoft-Sharing\Vamshi\IREL\IREL_BIN\bin\DotNetOpenAuth.OAuth.Consumer.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OpenId">
+      <HintPath>\\192.168.30.4\eSoft-Sharing\Vamshi\IREL\IREL_BIN\bin\DotNetOpenAuth.OpenId.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OpenId.RelyingParty">
+      <HintPath>\\192.168.30.4\eSoft-Sharing\Vamshi\IREL\IREL_BIN\bin\DotNetOpenAuth.OpenId.RelyingParty.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework">
+      <HintPath>\\192.168.30.4\eSoft-Sharing\Vamshi\IREL\IREL_BIN\bin\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="IREL">
+      <HintPath>\\192.168.30.4\eSoft-Sharing\Vamshi\IREL\IREL_BIN\bin\IREL.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Membership.OpenAuth">
+      <HintPath>\\192.168.30.4\eSoft-Sharing\Vamshi\IREL\IREL_BIN\bin\Microsoft.AspNet.Membership.OpenAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Web.Optimization.WebForms">
+      <HintPath>\\192.168.30.4\eSoft-Sharing\Vamshi\IREL\IREL_BIN\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.ScriptManager.MSAjax">
+      <HintPath>\\192.168.30.4\eSoft-Sharing\Vamshi\IREL\IREL_BIN\bin\Microsoft.ScriptManager.MSAjax.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ScriptManager.WebForms">
+      <HintPath>\\192.168.30.4\eSoft-Sharing\Vamshi\IREL\IREL_BIN\bin\Microsoft.ScriptManager.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="MyRfc2898Encrypt, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>\\192.168.30.4\vss projects\IREL\MyRfc2898Encrypt.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.Formatting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.AspNet.WebApi.Client.4.0.20710.0\lib\net40\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>packages\Microsoft.AspNet.WebPages.3.2.6\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.AspNet.WebApi.Core.4.0.20710.0\lib\net40\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.AspNet.WebApi.WebHost.4.0.20710.0\lib\net40\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>\\192.168.30.4\eSoft-Sharing\Vamshi\IREL\IREL_BIN\bin\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Providers">
+      <HintPath>\\192.168.30.4\eSoft-Sharing\Vamshi\IREL\IREL_BIN\bin\System.Web.Providers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>packages\Microsoft.AspNet.Razor.3.2.6\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>packages\Microsoft.AspNet.WebPages.3.2.6\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>packages\Microsoft.AspNet.WebPages.3.2.6\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>packages\Microsoft.AspNet.WebPages.3.2.6\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <HintPath>\\192.168.30.4\eSoft-Sharing\Vamshi\IREL\IREL_BIN\bin\WebGrease.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Themes\Ravi1.css" />
+    <Content Include="App_Themes\Ravi21.css" />
+    <Content Include="App_Themes\YellowTheme\anylinkcssmenu.css" />
+    <Content Include="App_Themes\YellowTheme\anylinkcssmenu.js" />
+    <Content Include="App_Themes\YellowTheme\bgStyle.css" />
+    <Content Include="App_Themes\YellowTheme\bootstrap.min.css" />
+    <Content Include="App_Themes\YellowTheme\controlsStyle.css" />
+    <Content Include="App_Themes\YellowTheme\modern-business.css" />
+    <Content Include="App_Themes\YellowTheme\MyPopup.css" />
+    <Content Include="App_Themes\YellowTheme\Styles.css" />
+    <Content Include="ConfigurationSettings\ChangePassword.aspx" />
+    <Content Include="ConfigurationSettings\DBConfigurationSettings.aspx" />
+    <Content Include="ConfigurationSettings\PagePermissions.aspx" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Content\themes\base\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_888888_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\themes\base\jquery-ui.css" />
+    <Content Include="Content\themes\base\jquery.ui.accordion.css" />
+    <Content Include="Content\themes\base\jquery.ui.all.css" />
+    <Content Include="Content\themes\base\jquery.ui.autocomplete.css" />
+    <Content Include="Content\themes\base\jquery.ui.base.css" />
+    <Content Include="Content\themes\base\jquery.ui.button.css" />
+    <Content Include="Content\themes\base\jquery.ui.core.css" />
+    <Content Include="Content\themes\base\jquery.ui.datepicker.css" />
+    <Content Include="Content\themes\base\jquery.ui.dialog.css" />
+    <Content Include="Content\themes\base\jquery.ui.progressbar.css" />
+    <Content Include="Content\themes\base\jquery.ui.resizable.css" />
+    <Content Include="Content\themes\base\jquery.ui.selectable.css" />
+    <Content Include="Content\themes\base\jquery.ui.slider.css" />
+    <Content Include="Content\themes\base\jquery.ui.tabs.css" />
+    <Content Include="Content\themes\base\jquery.ui.theme.css" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_888888_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\themes\base\minified\jquery-ui.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.accordion.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.autocomplete.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.button.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.core.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.datepicker.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.dialog.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.progressbar.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.resizable.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.selectable.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.slider.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.tabs.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
+    <Content Include="DocumentCentral\DocumentsUploading.aspx" />
+    <Content Include="DocumentCentral\Documents\NoPhoto.JPG" />
+    <Content Include="DocumentCentral\Documents_Temp\NoPhoto.JPG" />
+    <Content Include="DocumentCentral\EmpDataDoc.aspx" />
+    <Content Include="Home.aspx" />
+    <Content Include="Images\accent.png" />
+    <Content Include="Images\appraisal.png" />
+    <Content Include="Images\appraisalRep.png" />
+    <Content Include="Images\bg.jpg" />
+    <Content Include="Images\bg2.jpg" />
+    <Content Include="Images\bgbottomlogin.jpg" />
+    <Content Include="Images\bglogo.jpg" />
+    <Content Include="Images\bullet.png" />
+    <Content Include="Images\clearbutton.jpg" />
+    <Content Include="Images\cross_icon_normal.png" />
+    <Content Include="Images\Error1.jpg" />
+    <Content Include="Images\esoft-logo-small.png" />
+    <Content Include="Images\header_1.jpg" />
+    <Content Include="Images\header_2.jpg" />
+    <Content Include="Images\heroAccent.png" />
+    <Content Include="Images\InitialImage.png" />
+    <Content Include="Images\IRELlogo2.jpg" />
+    <Content Include="Images\keys.gif" />
+    <Content Include="Images\leftarw.png" />
+    <Content Include="Images\loading.GIF" />
+    <Content Include="Images\loading2.gif" />
+    <Content Include="Images\login.gif" />
+    <Content Include="Images\login.png" />
+    <Content Include="Images\loginbg.jpg" />
+    <Content Include="Images\loginbg1.jpg" />
+    <Content Include="Images\loginbg2.jpg" />
+    <Content Include="Images\logo.png" />
+    <Content Include="Images\logout.png" />
+    <Content Include="Images\man-key.png" />
+    <Content Include="Images\menubg.jpg" />
+    <Content Include="Images\nodatafound.jpg" />
+    <Content Include="Images\NoPhoto.JPG" />
+    <Content Include="Images\orderedList0.png" />
+    <Content Include="Images\orderedList1.png" />
+    <Content Include="Images\orderedList2.png" />
+    <Content Include="Images\orderedList3.png" />
+    <Content Include="Images\orderedList4.png" />
+    <Content Include="Images\orderedList5.png" />
+    <Content Include="Images\orderedList6.png" />
+    <Content Include="Images\orderedList7.png" />
+    <Content Include="Images\orderedList8.png" />
+    <Content Include="Images\orderedList9.png" />
+    <Content Include="Images\reset1.jpg" />
+    <Content Include="Images\rightarw.png" />
+    <Content Include="Images\SelectedButton.png" />
+    <Content Include="Images\Stage_BG_btm.png" />
+    <Content Include="Images\template-1_2_2_01.gif" />
+    <Content Include="Images\template-1_2_2_02.gif" />
+    <Content Include="Images\template-1_2_2_03.gif" />
+    <Content Include="Images\template-1_2_2_04.gif" />
+    <Content Include="Images\template-1_2_2_05.gif" />
+    <Content Include="Images\template-1_2_2_06.gif" />
+    <Content Include="Images\template-1_2_2_07.gif" />
+    <Content Include="Images\template-1_2_2_08.gif" />
+    <Content Include="Images\template-1_2_2_09.gif" />
+    <Content Include="Images\template-1_2_2_10.gif" />
+    <Content Include="Images\template-1_2_2_11.gif" />
+    <Content Include="Images\template-1_2_2_12.gif" />
+    <Content Include="Images\title.gif" />
+    <Content Include="Images\title.jpg" />
+    <Content Include="Images\title.png" />
+    <Content Include="Images\titlebar_bg.jpg" />
+    <Content Include="Images\user.png" />
+    <Content Include="Images\wm.jpg" />
+    <Content Include="JS\ImgValid.js" />
+    <Content Include="JS\md5.js" />
+    <Content Include="JS\myjs11.js" />
+    <Content Include="JS\MyValidations.js" />
+    <Content Include="JS\Ravi1.js" />
+    <Content Include="JS\Ravi2.js" />
+    <Content Include="JS\Simple.js" />
+    <Content Include="JS\TxtBoxValidations.js" />
+    <Content Include="JS\Validations.js" />
+    <Content Include="Login.aspx" />
+    <Content Include="MainHome.aspx" />
+    <Content Include="Masters\AppraiseeList.aspx" />
+    <Content Include="Masters\CircularUploading.aspx" />
+    <Content Include="Masters\CompanyMoUScore.aspx" />
+    <Content Include="Masters\Country.aspx" />
+    <Content Include="Masters\Department.aspx" />
+    <Content Include="Masters\Designation.aspx" />
+    <Content Include="Masters\EmpData.aspx" />
+    <Content Include="Masters\EmpPhotos\NoPhoto.JPG" />
+    <Content Include="Masters\EmpPhotos_Temp\NoPhoto.JPG" />
+    <Content Include="Masters\EmpProfile.aspx" />
+    <Content Include="Masters\EmpSignature\NoPhoto.JPG" />
+    <Content Include="Masters\EmpSignature_Temp\NoPhoto.JPG" />
+    <Content Include="Masters\Emp_Basic.aspx" />
+    <Content Include="Masters\Emp_Roles.aspx" />
+    <Content Include="Masters\FinancialYear.aspx" />
+    <Content Include="Masters\Grade.aspx" />
+    <Content Include="Masters\HODepartment.aspx" />
+    <Content Include="Masters\HODepartmentSub.aspx" />
+    <Content Include="Masters\HOMoUScore.aspx" />
+    <Content Include="Masters\MeasurementUnits.aspx" />
+    <Content Include="Masters\Qualification.aspx" />
+    <Content Include="Masters\Roles.aspx" />
+    <Content Include="Masters\Section.aspx" />
+    <Content Include="Masters\State.aspx" />
+    <Content Include="Masters\Unit.aspx" />
+    <Content Include="Masters\UnitMoUScore.aspx" />
+    <Content Include="packages.config" />
+    <Content Include="IRELMain.Master" />
+    <Content Include="DBML\MastersDB.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>MastersDB.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DBML\TransactionsDB.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>TransactionsDB.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DBML\CgmGmDB.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>CgmGmDB.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DBML\DocumentCentralDB.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>DocumentCentralDB.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DBML\TransfersDB.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>TransfersDB.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Masters\Circular\Report1.pdf" />
+    <None Include="Properties\PublishProfiles\IREL.pubxml" />
+    <None Include="Scripts\jquery-1.7.1.intellisense.js" />
+    <Content Include="RaviPage.aspx" />
+    <Content Include="RaviPage2.aspx" />
+    <Content Include="Reports\PerformanceAppraisalReports.aspx" />
+    <Content Include="Reports\ReportSelection.aspx" />
+    <Content Include="Reports\ReportViewer.aspx" />
+    <Content Include="ResetPwd.aspx" />
+    <Content Include="Scripts\jquery-1.7.1.js" />
+    <Content Include="Scripts\jquery-1.7.1.min.js" />
+    <Content Include="Scripts\jquery-1.8.3.min.js" />
+    <Content Include="Scripts\jquery-3.3.1.js" />
+    <Content Include="Scripts\jquery-3.3.1.min.js" />
+    <Content Include="Scripts\jquery-ui-1.8.20.js" />
+    <Content Include="Scripts\jquery-ui-1.8.20.min.js" />
+    <Content Include="Scripts\modernizr-2.5.3.js" />
+    <Content Include="Scripts\MyEncrypt.js" />
+    <Content Include="Scripts\WebForms\DetailsView.js" />
+    <Content Include="Scripts\WebForms\Focus.js" />
+    <Content Include="Scripts\WebForms\GridView.js" />
+    <Content Include="Scripts\WebForms\Menu.js" />
+    <Content Include="Scripts\WebForms\MenuStandards.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjax.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxApplicationServices.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxComponentModel.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxCore.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxGlobalization.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxHistory.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxNetwork.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxSerialization.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxTimer.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxWebForms.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxWebServices.js" />
+    <Content Include="Scripts\WebForms\SmartNav.js" />
+    <Content Include="Scripts\WebForms\TreeView.js" />
+    <Content Include="Scripts\WebForms\WebForms.js" />
+    <Content Include="Scripts\WebForms\WebParts.js" />
+    <Content Include="Scripts\WebForms\WebUIValidation.js" />
+    <Content Include="Scripts\_references.js" />
+    <Content Include="favicon.ico" />
+    <Content Include="Global.asax" />
+    <Content Include="Transaction\ActivityLog.aspx" />
+    <Content Include="Transaction\AppraisalForm%28E0-E4%29.aspx" />
+    <Content Include="Transaction\AppraisalForm%28E5-E6%29.aspx" />
+    <Content Include="Transaction\AppraisalForm%28S1-S8%29.aspx" />
+    <Content Include="Transaction\AppraisalForm.aspx" />
+    <Content Include="Transaction\AppraisalSectionCalendar.aspx" />
+    <Content Include="Transaction\AppraiseeReportingReviewingOfficerMaping%28E0-E4%29.aspx" />
+    <Content Include="Transaction\AppraiseeReportingReviewingOfficerMaping%28E5-E6%29.aspx" />
+    <Content Include="Transaction\AppraiseeReportingReviewingOfficerMaping%28S1-S8%29.aspx" />
+    <Content Include="Transaction\AppraiseeReportingReviewingOfficerMaping.aspx" />
+    <Content Include="Transaction\AssessmentKraCrMidYearReview%28E0-E4%29.aspx" />
+    <Content Include="Transaction\AssessmentKraCrMidYearReview%28E5-E6%29.aspx" />
+    <Content Include="Transaction\AssessmentKraCrMidYearReviewS1S8.aspx" />
+    <Content Include="Transaction\AssessmentofKRAandCR%28E0-E4%29.aspx" />
+    <Content Include="Transaction\AssessmentofKRAandCR%28E5-E6%29.aspx" />
+    <Content Include="Transaction\AssessmentofKRAandCR%28S1-S8%29.aspx" />
+    <Content Include="Transaction\AssessmentofKRAandCR.aspx" />
+    <Content Include="Transaction\CareerDevelopmentPlan.aspx" />
+    <Content Include="Transaction\CgmGmMapping.aspx" />
+    <Content Include="Transaction\FeedbackOnKeyCompetencies%28E0-E4%29.aspx" />
+    <Content Include="Transaction\FeedbackOnKeyCompetencies%28E5-E6%29.aspx" />
+    <Content Include="Transaction\FeedbackOnKeyCompetencies.aspx" />
+    <Content Include="Transaction\FeedbackOnKeyCompetenciesS1S8.aspx" />
+    <Content Include="Transaction\IndividualDevelopmentPlan%28E0-E4%29.aspx" />
+    <Content Include="Transaction\IndividualDevelopmentPlan%28E5-E6%29.aspx" />
+    <Content Include="Transaction\IndividualDevelopmentPlan.aspx" />
+    <Content Include="Transaction\IndividualDevelopmentPlanS1S8.aspx" />
+    <Content Include="Transaction\KRAandCRforAppraisal%28E5-E6%29.aspx" />
+    <Content Include="Transaction\KRAandCRforAppraisal%28S1-S8%29.aspx" />
+    <Content Include="Transaction\KRAandCRforAppraisal.aspx" />
+    <Content Include="Transaction\KRAandCRforAppraisal%28E0-E4%29.aspx" />
+    <Content Include="Transaction\KraCrMidYearReview%28E0-E4%29.aspx" />
+    <Content Include="Transaction\KraCrMidYearReview%28E5-E6%29.aspx" />
+    <Content Include="Transaction\KraCrMidYearReview.aspx" />
+    <Content Include="Transaction\KraCrMidYearReviewS1S8.aspx" />
+    <Content Include="Transaction\MailFormatTemplate.html" />
+    <Content Include="Transaction\OfficersMaping.aspx" />
+    <Content Include="Transaction\Opams_HeadOffice.aspx" />
+    <Content Include="Transaction\OverallRating%28E0-E4%29.aspx" />
+    <Content Include="Transaction\OverallRating%28E5-E6%29.aspx" />
+    <Content Include="Transaction\OverallRating%28S1-S8%29.aspx" />
+    <Content Include="Transaction\OverallRating.aspx" />
+    <Content Include="Transaction\PARCalendar.aspx" />
+    <Content Include="Transaction\PARepresentations.aspx" />
+    <Content Include="Transaction\PARStatusReset%28E0-E4%29.aspx" />
+    <Content Include="Transaction\PARStatusReset%28E5-E6%29.aspx" />
+    <Content Include="Transaction\PARStatusReset%28S1-S8%29.aspx" />
+    <Content Include="Transaction\PARStatusReset.aspx" />
+    <Content Include="Transaction\PerformanceAppraisal%28E0-E4%29.aspx" />
+    <Content Include="Transaction\PerformanceAppraisal%28E5-E6%29.aspx" />
+    <Content Include="Transaction\PerformanceAppraisal%28S1-S8%29.aspx" />
+    <Content Include="Transaction\PerformanceAppraisal.aspx" />
+    <Content Include="Transaction\PerformanceAppraisalCgmGm.aspx" />
+    <Content Include="Transaction\PerformanceComments_Overallrating.aspx" />
+    <Content Include="Transaction\PerformanceComments_OverallratingE0E4.aspx" />
+    <Content Include="Transaction\PerformanceComments_OverallratingE5E6.aspx" />
+    <Content Include="Transaction\PerformanceComments_OverallratingS1S8.aspx" />
+    <Content Include="Transaction\RatingScale.aspx" />
+    <Content Include="Transaction\SectionI.aspx" />
+    <Content Include="Transaction\SectionII.aspx" />
+    <Content Include="Transaction\SectionIII.aspx" />
+    <Content Include="Transaction\SectionIV.aspx" />
+    <Content Include="Transaction\SectionV.aspx" />
+    <Content Include="Transaction\SectionVI.aspx" />
+    <Content Include="Transaction\SendEMail.aspx" />
+    <Content Include="Transaction\SendSMS.aspx" />
+    <Content Include="Transaction\SmsCompose.aspx" />
+    <Content Include="Transaction\SmsReminderNotifications.aspx" />
+    <Content Include="Transfers\CgmGmPARstatus.aspx" />
+    <Content Include="Transfers\DepartmentTransfers.aspx" />
+    <Content Include="Transfers\DesignationTransfers.aspx" />
+    <Content Include="Transfers\EmployeeTransfers%28E0-E4%29.aspx" />
+    <Content Include="Transfers\EmployeeTransfers%28E5-E6%29.aspx" />
+    <Content Include="Transfers\EmployeeTransfers%28S1-S8%29.aspx" />
+    <Content Include="Transfers\EmployeeTransfers.aspx" />
+    <Content Include="Transfers\ReportingReviewingMapping.aspx" />
+    <Content Include="Transfers\RptRvwMappingMultiplePAR%28E0-E4%29.aspx" />
+    <Content Include="Transfers\RptRvwMappingMultiplePAR%28E5-E6%29.aspx" />
+    <Content Include="Transfers\RptRvwMappingMultiplePAR%28E7-E8%29.aspx" />
+    <Content Include="Transfers\RptRvwMappingMultiplePAR%28S1-S8%29.aspx" />
+    <Content Include="Transfers\RptRvwMappingMultiplePAR.aspx" />
+    <Content Include="Transfers\UnitTransfers.aspx" />
+    <Content Include="Utilities\GenericErr.html" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Bundle.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\AuthConfig.cs" />
+    <Compile Include="ConfigurationSettings\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConfigurationSettings\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConfigurationSettings\DBConfigurationSettings.aspx.cs">
+      <DependentUpon>DBConfigurationSettings.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConfigurationSettings\DBConfigurationSettings.aspx.designer.cs">
+      <DependentUpon>DBConfigurationSettings.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConfigurationSettings\PagePermissions.aspx.cs">
+      <DependentUpon>PagePermissions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConfigurationSettings\PagePermissions.aspx.designer.cs">
+      <DependentUpon>PagePermissions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DBML\CgmGmDB.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CgmGmDB.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="DBML\DocumentCentralDB.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DocumentCentralDB.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="DBML\MastersDB.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MastersDB.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="DBML\TransactionsDB.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TransactionsDB.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="DBML\TransfersDB.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TransfersDB.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="DocumentCentral\DocumentsUploading.aspx.cs">
+      <DependentUpon>DocumentsUploading.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DocumentCentral\DocumentsUploading.aspx.designer.cs">
+      <DependentUpon>DocumentsUploading.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DocumentCentral\EmpDataDoc.aspx.cs">
+      <DependentUpon>EmpDataDoc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DocumentCentral\EmpDataDoc.aspx.designer.cs">
+      <DependentUpon>EmpDataDoc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IRELMain.Master.cs">
+      <DependentUpon>IRELMain.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IRELMain.Master.designer.cs">
+      <DependentUpon>IRELMain.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MainHome.aspx.cs">
+      <DependentUpon>MainHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MainHome.aspx.designer.cs">
+      <DependentUpon>MainHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\AppraiseeList.aspx.cs">
+      <DependentUpon>AppraiseeList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Masters\AppraiseeList.aspx.designer.cs">
+      <DependentUpon>AppraiseeList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\CircularUploading.aspx.cs">
+      <DependentUpon>CircularUploading.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Masters\CircularUploading.aspx.designer.cs">
+      <DependentUpon>CircularUploading.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\CompanyMoUScore.aspx.cs">
+      <DependentUpon>CompanyMoUScore.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Masters\CompanyMoUScore.aspx.designer.cs">
+      <DependentUpon>CompanyMoUScore.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\Country.aspx.cs">
+      <DependentUpon>Country.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Masters\Country.aspx.designer.cs">
+      <DependentUpon>Country.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\Department.aspx.cs">
+      <DependentUpon>Department.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Masters\Department.aspx.designer.cs">
+      <DependentUpon>Department.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\Designation.aspx.cs">
+      <DependentUpon>Designation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Masters\Designation.aspx.designer.cs">
+      <DependentUpon>Designation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\EmpData.aspx.cs">
+      <DependentUpon>EmpData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Masters\EmpData.aspx.designer.cs">
+      <DependentUpon>EmpData.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\EmpProfile.aspx.cs">
+      <DependentUpon>EmpProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Masters\EmpProfile.aspx.designer.cs">
+      <DependentUpon>EmpProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\Emp_Basic.aspx.cs">
+      <DependentUpon>Emp_Basic.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Masters\Emp_Basic.aspx.designer.cs">
+      <DependentUpon>Emp_Basic.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\Emp_Roles.aspx.cs">
+      <DependentUpon>Emp_Roles.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Masters\Emp_Roles.aspx.designer.cs">
+      <DependentUpon>Emp_Roles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\FinancialYear.aspx.cs">
+      <DependentUpon>FinancialYear.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Masters\FinancialYear.aspx.designer.cs">
+      <DependentUpon>FinancialYear.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\Grade.aspx.cs">
+      <DependentUpon>Grade.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Masters\Grade.aspx.designer.cs">
+      <DependentUpon>Grade.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\HODepartment.aspx.cs">
+      <DependentUpon>HODepartment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Masters\HODepartment.aspx.designer.cs">
+      <DependentUpon>HODepartment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\HODepartmentSub.aspx.cs">
+      <DependentUpon>HODepartmentSub.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Masters\HODepartmentSub.aspx.designer.cs">
+      <DependentUpon>HODepartmentSub.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\HOMoUScore.aspx.cs">
+      <DependentUpon>HOMoUScore.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Masters\HOMoUScore.aspx.designer.cs">
+      <DependentUpon>HOMoUScore.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\MeasurementUnits.aspx.cs">
+      <DependentUpon>MeasurementUnits.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Masters\MeasurementUnits.aspx.designer.cs">
+      <DependentUpon>MeasurementUnits.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\Qualification.aspx.cs">
+      <DependentUpon>Qualification.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Masters\Qualification.aspx.designer.cs">
+      <DependentUpon>Qualification.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\Roles.aspx.cs">
+      <DependentUpon>Roles.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Masters\Roles.aspx.designer.cs">
+      <DependentUpon>Roles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\Section.aspx.cs">
+      <DependentUpon>Section.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Masters\Section.aspx.designer.cs">
+      <DependentUpon>Section.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\State.aspx.cs">
+      <DependentUpon>State.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Masters\State.aspx.designer.cs">
+      <DependentUpon>State.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\Unit.aspx.cs">
+      <DependentUpon>Unit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Masters\Unit.aspx.designer.cs">
+      <DependentUpon>Unit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\UnitMoUScore.aspx.cs">
+      <DependentUpon>UnitMoUScore.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Masters\UnitMoUScore.aspx.designer.cs">
+      <DependentUpon>UnitMoUScore.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RaviPage.aspx.cs">
+      <DependentUpon>RaviPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RaviPage.aspx.designer.cs">
+      <DependentUpon>RaviPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RaviPage2.aspx.cs">
+      <DependentUpon>RaviPage2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RaviPage2.aspx.designer.cs">
+      <DependentUpon>RaviPage2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\PerformanceAppraisalReports.aspx.cs">
+      <DependentUpon>PerformanceAppraisalReports.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\PerformanceAppraisalReports.aspx.designer.cs">
+      <DependentUpon>PerformanceAppraisalReports.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ReportSelection.aspx.cs">
+      <DependentUpon>ReportSelection.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\ReportSelection.aspx.designer.cs">
+      <DependentUpon>ReportSelection.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ReportViewer.aspx.cs">
+      <DependentUpon>ReportViewer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\ReportViewer.aspx.designer.cs">
+      <DependentUpon>ReportViewer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ResetPwd.aspx.cs">
+      <DependentUpon>ResetPwd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ResetPwd.aspx.designer.cs">
+      <DependentUpon>ResetPwd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\ActivityLog.aspx.cs">
+      <DependentUpon>ActivityLog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\ActivityLog.aspx.designer.cs">
+      <DependentUpon>ActivityLog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\AppraisalForm%28E0-E4%29.aspx.cs">
+      <DependentUpon>AppraisalForm%28E0-E4%29.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\AppraisalForm%28E0-E4%29.aspx.designer.cs">
+      <DependentUpon>AppraisalForm%28E0-E4%29.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\AppraisalForm%28E5-E6%29.aspx.cs">
+      <DependentUpon>AppraisalForm%28E5-E6%29.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\AppraisalForm%28E5-E6%29.aspx.designer.cs">
+      <DependentUpon>AppraisalForm%28E5-E6%29.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\AppraisalForm%28S1-S8%29.aspx.cs">
+      <DependentUpon>AppraisalForm%28S1-S8%29.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\AppraisalForm%28S1-S8%29.aspx.designer.cs">
+      <DependentUpon>AppraisalForm%28S1-S8%29.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\AppraisalForm.aspx.cs">
+      <DependentUpon>AppraisalForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\AppraisalForm.aspx.designer.cs">
+      <DependentUpon>AppraisalForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\AppraisalSectionCalendar.aspx.cs">
+      <DependentUpon>AppraisalSectionCalendar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\AppraisalSectionCalendar.aspx.designer.cs">
+      <DependentUpon>AppraisalSectionCalendar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\AppraiseeReportingReviewingOfficerMaping%28E0-E4%29.aspx.cs">
+      <DependentUpon>AppraiseeReportingReviewingOfficerMaping%28E0-E4%29.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\AppraiseeReportingReviewingOfficerMaping%28E0-E4%29.aspx.designer.cs">
+      <DependentUpon>AppraiseeReportingReviewingOfficerMaping%28E0-E4%29.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\AppraiseeReportingReviewingOfficerMaping%28E5-E6%29.aspx.cs">
+      <DependentUpon>AppraiseeReportingReviewingOfficerMaping%28E5-E6%29.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\AppraiseeReportingReviewingOfficerMaping%28E5-E6%29.aspx.designer.cs">
+      <DependentUpon>AppraiseeReportingReviewingOfficerMaping%28E5-E6%29.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\AppraiseeReportingReviewingOfficerMaping%28S1-S8%29.aspx.cs">
+      <DependentUpon>AppraiseeReportingReviewingOfficerMaping%28S1-S8%29.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\AppraiseeReportingReviewingOfficerMaping%28S1-S8%29.aspx.designer.cs">
+      <DependentUpon>AppraiseeReportingReviewingOfficerMaping%28S1-S8%29.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\AppraiseeReportingReviewingOfficerMaping.aspx.cs">
+      <DependentUpon>AppraiseeReportingReviewingOfficerMaping.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\AppraiseeReportingReviewingOfficerMaping.aspx.designer.cs">
+      <DependentUpon>AppraiseeReportingReviewingOfficerMaping.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\AssessmentKraCrMidYearReview%28E0-E4%29.aspx.cs">
+      <DependentUpon>AssessmentKraCrMidYearReview%28E0-E4%29.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\AssessmentKraCrMidYearReview%28E0-E4%29.aspx.designer.cs">
+      <DependentUpon>AssessmentKraCrMidYearReview%28E0-E4%29.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\AssessmentKraCrMidYearReview%28E5-E6%29.aspx.cs">
+      <DependentUpon>AssessmentKraCrMidYearReview%28E5-E6%29.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\AssessmentKraCrMidYearReview%28E5-E6%29.aspx.designer.cs">
+      <DependentUpon>AssessmentKraCrMidYearReview%28E5-E6%29.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\AssessmentKraCrMidYearReviewS1S8.aspx.cs">
+      <DependentUpon>AssessmentKraCrMidYearReviewS1S8.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\AssessmentKraCrMidYearReviewS1S8.aspx.designer.cs">
+      <DependentUpon>AssessmentKraCrMidYearReviewS1S8.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\AssessmentofKRAandCR%28E0-E4%29.aspx.cs">
+      <DependentUpon>AssessmentofKRAandCR%28E0-E4%29.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\AssessmentofKRAandCR%28E0-E4%29.aspx.designer.cs">
+      <DependentUpon>AssessmentofKRAandCR%28E0-E4%29.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\AssessmentofKRAandCR%28E5-E6%29.aspx.cs">
+      <DependentUpon>AssessmentofKRAandCR%28E5-E6%29.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\AssessmentofKRAandCR%28E5-E6%29.aspx.designer.cs">
+      <DependentUpon>AssessmentofKRAandCR%28E5-E6%29.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\AssessmentofKRAandCR%28S1-S8%29.aspx.cs">
+      <DependentUpon>AssessmentofKRAandCR%28S1-S8%29.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\AssessmentofKRAandCR%28S1-S8%29.aspx.designer.cs">
+      <DependentUpon>AssessmentofKRAandCR%28S1-S8%29.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\AssessmentofKRAandCR.aspx.cs">
+      <DependentUpon>AssessmentofKRAandCR.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\AssessmentofKRAandCR.aspx.designer.cs">
+      <DependentUpon>AssessmentofKRAandCR.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\CareerDevelopmentPlan.aspx.cs">
+      <DependentUpon>CareerDevelopmentPlan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\CareerDevelopmentPlan.aspx.designer.cs">
+      <DependentUpon>CareerDevelopmentPlan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\CgmGmMapping.aspx.cs">
+      <DependentUpon>CgmGmMapping.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\CgmGmMapping.aspx.designer.cs">
+      <DependentUpon>CgmGmMapping.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\FeedbackOnKeyCompetencies%28E0-E4%29.aspx.cs">
+      <DependentUpon>FeedbackOnKeyCompetencies%28E0-E4%29.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\FeedbackOnKeyCompetencies%28E0-E4%29.aspx.designer.cs">
+      <DependentUpon>FeedbackOnKeyCompetencies%28E0-E4%29.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\FeedbackOnKeyCompetencies%28E5-E6%29.aspx.cs">
+      <DependentUpon>FeedbackOnKeyCompetencies%28E5-E6%29.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\FeedbackOnKeyCompetencies%28E5-E6%29.aspx.designer.cs">
+      <DependentUpon>FeedbackOnKeyCompetencies%28E5-E6%29.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\FeedbackOnKeyCompetencies.aspx.cs">
+      <DependentUpon>FeedbackOnKeyCompetencies.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\FeedbackOnKeyCompetencies.aspx.designer.cs">
+      <DependentUpon>FeedbackOnKeyCompetencies.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\FeedbackOnKeyCompetenciesS1S8.aspx.cs">
+      <DependentUpon>FeedbackOnKeyCompetenciesS1S8.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\FeedbackOnKeyCompetenciesS1S8.aspx.designer.cs">
+      <DependentUpon>FeedbackOnKeyCompetenciesS1S8.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\IndividualDevelopmentPlan%28E0-E4%29.aspx.cs">
+      <DependentUpon>IndividualDevelopmentPlan%28E0-E4%29.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\IndividualDevelopmentPlan%28E0-E4%29.aspx.designer.cs">
+      <DependentUpon>IndividualDevelopmentPlan%28E0-E4%29.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\IndividualDevelopmentPlan%28E5-E6%29.aspx.cs">
+      <DependentUpon>IndividualDevelopmentPlan%28E5-E6%29.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\IndividualDevelopmentPlan%28E5-E6%29.aspx.designer.cs">
+      <DependentUpon>IndividualDevelopmentPlan%28E5-E6%29.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\IndividualDevelopmentPlan.aspx.cs">
+      <DependentUpon>IndividualDevelopmentPlan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\IndividualDevelopmentPlan.aspx.designer.cs">
+      <DependentUpon>IndividualDevelopmentPlan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\IndividualDevelopmentPlanS1S8.aspx.cs">
+      <DependentUpon>IndividualDevelopmentPlanS1S8.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\IndividualDevelopmentPlanS1S8.aspx.designer.cs">
+      <DependentUpon>IndividualDevelopmentPlanS1S8.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\KRAandCRforAppraisal%28E5-E6%29.aspx.cs">
+      <DependentUpon>KRAandCRforAppraisal%28E5-E6%29.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\KRAandCRforAppraisal%28E5-E6%29.aspx.designer.cs">
+      <DependentUpon>KRAandCRforAppraisal%28E5-E6%29.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\KRAandCRforAppraisal%28S1-S8%29.aspx.cs">
+      <DependentUpon>KRAandCRforAppraisal%28S1-S8%29.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\KRAandCRforAppraisal%28S1-S8%29.aspx.designer.cs">
+      <DependentUpon>KRAandCRforAppraisal%28S1-S8%29.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\KRAandCRforAppraisal.aspx.cs">
+      <DependentUpon>KRAandCRforAppraisal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\KRAandCRforAppraisal.aspx.designer.cs">
+      <DependentUpon>KRAandCRforAppraisal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\KRAandCRforAppraisal%28E0-E4%29.aspx.cs">
+      <DependentUpon>KRAandCRforAppraisal%28E0-E4%29.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\KRAandCRforAppraisal%28E0-E4%29.aspx.designer.cs">
+      <DependentUpon>KRAandCRforAppraisal%28E0-E4%29.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\KraCrMidYearReview%28E0-E4%29.aspx.cs">
+      <DependentUpon>KraCrMidYearReview%28E0-E4%29.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\KraCrMidYearReview%28E0-E4%29.aspx.designer.cs">
+      <DependentUpon>KraCrMidYearReview%28E0-E4%29.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\KraCrMidYearReview%28E5-E6%29.aspx.cs">
+      <DependentUpon>KraCrMidYearReview%28E5-E6%29.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\KraCrMidYearReview%28E5-E6%29.aspx.designer.cs">
+      <DependentUpon>KraCrMidYearReview%28E5-E6%29.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\KraCrMidYearReview.aspx.cs">
+      <DependentUpon>KraCrMidYearReview.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\KraCrMidYearReview.aspx.designer.cs">
+      <DependentUpon>KraCrMidYearReview.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\KraCrMidYearReviewS1S8.aspx.cs">
+      <DependentUpon>KraCrMidYearReviewS1S8.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\KraCrMidYearReviewS1S8.aspx.designer.cs">
+      <DependentUpon>KraCrMidYearReviewS1S8.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\OfficersMaping.aspx.cs">
+      <DependentUpon>OfficersMaping.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\OfficersMaping.aspx.designer.cs">
+      <DependentUpon>OfficersMaping.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\Opams_HeadOffice.aspx.cs">
+      <DependentUpon>Opams_HeadOffice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\Opams_HeadOffice.aspx.designer.cs">
+      <DependentUpon>Opams_HeadOffice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\OverallRating%28E0-E4%29.aspx.cs">
+      <DependentUpon>OverallRating%28E0-E4%29.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\OverallRating%28E0-E4%29.aspx.designer.cs">
+      <DependentUpon>OverallRating%28E0-E4%29.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\OverallRating%28E5-E6%29.aspx.cs">
+      <DependentUpon>OverallRating%28E5-E6%29.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\OverallRating%28E5-E6%29.aspx.designer.cs">
+      <DependentUpon>OverallRating%28E5-E6%29.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\OverallRating%28S1-S8%29.aspx.cs">
+      <DependentUpon>OverallRating%28S1-S8%29.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\OverallRating%28S1-S8%29.aspx.designer.cs">
+      <DependentUpon>OverallRating%28S1-S8%29.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\OverallRating.aspx.cs">
+      <DependentUpon>OverallRating.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\OverallRating.aspx.designer.cs">
+      <DependentUpon>OverallRating.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\PARCalendar.aspx.cs">
+      <DependentUpon>PARCalendar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\PARCalendar.aspx.designer.cs">
+      <DependentUpon>PARCalendar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\PARepresentations.aspx.cs">
+      <DependentUpon>PARepresentations.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\PARepresentations.aspx.designer.cs">
+      <DependentUpon>PARepresentations.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\PARStatusReset%28E0-E4%29.aspx.cs">
+      <DependentUpon>PARStatusReset%28E0-E4%29.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\PARStatusReset%28E0-E4%29.aspx.designer.cs">
+      <DependentUpon>PARStatusReset%28E0-E4%29.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\PARStatusReset%28E5-E6%29.aspx.cs">
+      <DependentUpon>PARStatusReset%28E5-E6%29.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\PARStatusReset%28E5-E6%29.aspx.designer.cs">
+      <DependentUpon>PARStatusReset%28E5-E6%29.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\PARStatusReset%28S1-S8%29.aspx.cs">
+      <DependentUpon>PARStatusReset%28S1-S8%29.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\PARStatusReset%28S1-S8%29.aspx.designer.cs">
+      <DependentUpon>PARStatusReset%28S1-S8%29.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\PARStatusReset.aspx.cs">
+      <DependentUpon>PARStatusReset.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\PARStatusReset.aspx.designer.cs">
+      <DependentUpon>PARStatusReset.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\PerformanceAppraisal%28E0-E4%29.aspx.cs">
+      <DependentUpon>PerformanceAppraisal%28E0-E4%29.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\PerformanceAppraisal%28E0-E4%29.aspx.designer.cs">
+      <DependentUpon>PerformanceAppraisal%28E0-E4%29.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\PerformanceAppraisal%28E5-E6%29.aspx.cs">
+      <DependentUpon>PerformanceAppraisal%28E5-E6%29.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\PerformanceAppraisal%28E5-E6%29.aspx.designer.cs">
+      <DependentUpon>PerformanceAppraisal%28E5-E6%29.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\PerformanceAppraisal%28S1-S8%29.aspx.cs">
+      <DependentUpon>PerformanceAppraisal%28S1-S8%29.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\PerformanceAppraisal%28S1-S8%29.aspx.designer.cs">
+      <DependentUpon>PerformanceAppraisal%28S1-S8%29.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\PerformanceAppraisal.aspx.cs">
+      <DependentUpon>PerformanceAppraisal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\PerformanceAppraisal.aspx.designer.cs">
+      <DependentUpon>PerformanceAppraisal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\PerformanceAppraisalCgmGm.aspx.cs">
+      <DependentUpon>PerformanceAppraisalCgmGm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\PerformanceAppraisalCgmGm.aspx.designer.cs">
+      <DependentUpon>PerformanceAppraisalCgmGm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\PerformanceComments_Overallrating.aspx.cs">
+      <DependentUpon>PerformanceComments_Overallrating.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\PerformanceComments_Overallrating.aspx.designer.cs">
+      <DependentUpon>PerformanceComments_Overallrating.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\PerformanceComments_OverallratingE0E4.aspx.cs">
+      <DependentUpon>PerformanceComments_OverallratingE0E4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\PerformanceComments_OverallratingE0E4.aspx.designer.cs">
+      <DependentUpon>PerformanceComments_OverallratingE0E4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\PerformanceComments_OverallratingE5E6.aspx.cs">
+      <DependentUpon>PerformanceComments_OverallratingE5E6.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\PerformanceComments_OverallratingE5E6.aspx.designer.cs">
+      <DependentUpon>PerformanceComments_OverallratingE5E6.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\PerformanceComments_OverallratingS1S8.aspx.cs">
+      <DependentUpon>PerformanceComments_OverallratingS1S8.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\PerformanceComments_OverallratingS1S8.aspx.designer.cs">
+      <DependentUpon>PerformanceComments_OverallratingS1S8.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\RatingScale.aspx.cs">
+      <DependentUpon>RatingScale.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\RatingScale.aspx.designer.cs">
+      <DependentUpon>RatingScale.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\SectionI.aspx.cs">
+      <DependentUpon>SectionI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\SectionI.aspx.designer.cs">
+      <DependentUpon>SectionI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\SectionII.aspx.cs">
+      <DependentUpon>SectionII.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\SectionII.aspx.designer.cs">
+      <DependentUpon>SectionII.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\SectionIII.aspx.cs">
+      <DependentUpon>SectionIII.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\SectionIII.aspx.designer.cs">
+      <DependentUpon>SectionIII.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\SectionIV.aspx.cs">
+      <DependentUpon>SectionIV.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\SectionIV.aspx.designer.cs">
+      <DependentUpon>SectionIV.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\SectionV.aspx.cs">
+      <DependentUpon>SectionV.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\SectionV.aspx.designer.cs">
+      <DependentUpon>SectionV.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\SectionVI.aspx.cs">
+      <DependentUpon>SectionVI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\SectionVI.aspx.designer.cs">
+      <DependentUpon>SectionVI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\SendEMail.aspx.cs">
+      <DependentUpon>SendEMail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\SendEMail.aspx.designer.cs">
+      <DependentUpon>SendEMail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\SendSMS.aspx.cs">
+      <DependentUpon>SendSMS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\SendSMS.aspx.designer.cs">
+      <DependentUpon>SendSMS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\SmsCompose.aspx.cs">
+      <DependentUpon>SmsCompose.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\SmsCompose.aspx.designer.cs">
+      <DependentUpon>SmsCompose.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\SmsReminderNotifications.aspx.cs">
+      <DependentUpon>SmsReminderNotifications.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\SmsReminderNotifications.aspx.designer.cs">
+      <DependentUpon>SmsReminderNotifications.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\textbox.cs" />
+    <Compile Include="Transaction\txtKeyResultAreas.cs" />
+    <Compile Include="Transfers\CgmGmPARstatus.aspx.cs">
+      <DependentUpon>CgmGmPARstatus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transfers\CgmGmPARstatus.aspx.designer.cs">
+      <DependentUpon>CgmGmPARstatus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transfers\DepartmentTransfers.aspx.cs">
+      <DependentUpon>DepartmentTransfers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transfers\DepartmentTransfers.aspx.designer.cs">
+      <DependentUpon>DepartmentTransfers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transfers\DesignationTransfers.aspx.cs">
+      <DependentUpon>DesignationTransfers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transfers\DesignationTransfers.aspx.designer.cs">
+      <DependentUpon>DesignationTransfers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transfers\EmployeeTransfers%28E0-E4%29.aspx.cs">
+      <DependentUpon>EmployeeTransfers%28E0-E4%29.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transfers\EmployeeTransfers%28E0-E4%29.aspx.designer.cs">
+      <DependentUpon>EmployeeTransfers%28E0-E4%29.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transfers\EmployeeTransfers%28E5-E6%29.aspx.cs">
+      <DependentUpon>EmployeeTransfers%28E5-E6%29.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transfers\EmployeeTransfers%28E5-E6%29.aspx.designer.cs">
+      <DependentUpon>EmployeeTransfers%28E5-E6%29.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transfers\EmployeeTransfers%28S1-S8%29.aspx.cs">
+      <DependentUpon>EmployeeTransfers%28S1-S8%29.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transfers\EmployeeTransfers%28S1-S8%29.aspx.designer.cs">
+      <DependentUpon>EmployeeTransfers%28S1-S8%29.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transfers\EmployeeTransfers.aspx.cs">
+      <DependentUpon>EmployeeTransfers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transfers\EmployeeTransfers.aspx.designer.cs">
+      <DependentUpon>EmployeeTransfers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transfers\ReportingReviewingMapping.aspx.cs">
+      <DependentUpon>ReportingReviewingMapping.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transfers\ReportingReviewingMapping.aspx.designer.cs">
+      <DependentUpon>ReportingReviewingMapping.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transfers\RptRvwMappingMultiplePAR%28E0-E4%29.aspx.cs">
+      <DependentUpon>RptRvwMappingMultiplePAR%28E0-E4%29.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transfers\RptRvwMappingMultiplePAR%28E0-E4%29.aspx.designer.cs">
+      <DependentUpon>RptRvwMappingMultiplePAR%28E0-E4%29.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transfers\RptRvwMappingMultiplePAR%28E5-E6%29.aspx.cs">
+      <DependentUpon>RptRvwMappingMultiplePAR%28E5-E6%29.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transfers\RptRvwMappingMultiplePAR%28E5-E6%29.aspx.designer.cs">
+      <DependentUpon>RptRvwMappingMultiplePAR%28E5-E6%29.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transfers\RptRvwMappingMultiplePAR%28E7-E8%29.aspx.cs">
+      <DependentUpon>RptRvwMappingMultiplePAR%28E7-E8%29.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transfers\RptRvwMappingMultiplePAR%28E7-E8%29.aspx.designer.cs">
+      <DependentUpon>RptRvwMappingMultiplePAR%28E7-E8%29.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transfers\RptRvwMappingMultiplePAR%28S1-S8%29.aspx.cs">
+      <DependentUpon>RptRvwMappingMultiplePAR%28S1-S8%29.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transfers\RptRvwMappingMultiplePAR%28S1-S8%29.aspx.designer.cs">
+      <DependentUpon>RptRvwMappingMultiplePAR%28S1-S8%29.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transfers\RptRvwMappingMultiplePAR.aspx.cs">
+      <DependentUpon>RptRvwMappingMultiplePAR.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transfers\RptRvwMappingMultiplePAR.aspx.designer.cs">
+      <DependentUpon>RptRvwMappingMultiplePAR.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transfers\UnitTransfers.aspx.cs">
+      <DependentUpon>UnitTransfers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transfers\UnitTransfers.aspx.designer.cs">
+      <DependentUpon>UnitTransfers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Utilities\AuditTrail.cs" />
+    <Compile Include="Utilities\ATEventLog.cs" />
+    <Compile Include="Utilities\Authenticate.cs" />
+    <Compile Include="Utilities\DataUtility.cs" />
+    <Compile Include="Utilities\MyMailMessage.cs" />
+    <Compile Include="Utilities\MyPasswordHash.cs" />
+    <Compile Include="Utilities\MySendSmsNow.cs" />
+    <Compile Include="Utilities\ReportServer.cs" />
+    <Compile Include="Utilities\ServerAddress.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DBML\MastersDB.dbml.layout">
+      <DependentUpon>MastersDB.dbml</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DBML\TransactionsDB.dbml.layout">
+      <DependentUpon>TransactionsDB.dbml</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DBML\CgmGmDB.dbml.layout">
+      <DependentUpon>CgmGmDB.dbml</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DBML\DocumentCentralDB.dbml.layout">
+      <DependentUpon>DocumentCentralDB.dbml</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DBML\TransfersDB.dbml.layout">
+      <DependentUpon>TransfersDB.dbml</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:56473/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

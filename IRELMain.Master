@@ -1,0 +1,74 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="IRELMain.master.cs" Inherits="IREL.IRELMain" %>
+
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>IREL (India) LIMITED</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link rel="icon" type="image/png" href="/images/favicon.ico"/>
+   <link href="App_Themes/YellowTheme/controlsStyle.css" rel="stylesheet" type="text/css" />
+    <link href="App_Themes/YellowTheme/bgStyle.css" rel="stylesheet" type="text/css" />
+    <link href="App_Themes/YellowTheme/Styles.css" rel="stylesheet" type="text/css" />
+    <link href="App_Themes/YellowTheme/bootstrap.min.css" rel="stylesheet"  type="text/css"/>
+    <link href="App_Themes/YellowTheme/modern-business.css" rel="stylesheet"  type="text/css"/>
+
+    <script type="text/javascript" >
+        //Check if the top location is same as the current location
+        if (top.location.hostname != self.location.hostname) {
+            //If not then set the top to you current
+            top.location.href = self.location.href;
+        }
+    </script>
+</head>
+<body style="margin: 0px">
+    <form id="form1" runat="server" method="post">
+        <%--<asp:ScriptReference Name="jquery.ui.combined" />--%>
+        <asp:ToolkitScriptManager ID="ToolkitScriptManager1" runat="server" AsyncPostBackTimeout="3600"></asp:ToolkitScriptManager>
+
+         <div class="pagebg">
+            <div class="row col-xl-12 col-sm-12 col-md-12 col-lg-12" style="margin: 0px; background-color:#281d6b;">
+                <div class="logobg col-xl-2 col-sm-2 col-md-2 col-lg-2"></div>
+                <div align="center" class="col-xl-8 col-sm-8 col-md-8 col-lg-8"><br /> <b style="color:wheat; font-size:20px">ONLINE PERFORMANCE APPRAISAL MANAGEMENT SYSTEM (OPAMS)</b><br />
+                   <b style="color:white; font-size:30px">IREL (India) Limited</b><br />
+                    <b style="color:#7272b0">(Formerly Indian Rare Earths Limited)</b>
+                </div>
+                <div class=" col-xl-2 col-sm-2 col-md-2 col-lg-2" style="margin: 0px; ">&nbsp; </div>
+            </div>
+            <div class="row  col-xl-12 col-sm-12 col-md-12 col-lg-12" style="background-color:#3f3e7d; margin: 0px;">
+             <div class="col-xl-8 col-sm-8 col-md-8 col-lg-8"> <asp:Menu ID="Menu1" runat="server" Orientation="Horizontal" StaticMenuItemStyle-CssClass="menuItem"
+                                        DynamicMenuItemStyle-CssClass="menuItem1" DynamicHorizontalOffset="2" StaticSubMenuIndent="10px">
+                                        <DynamicSelectedStyle />
+                                        <StaticHoverStyle ForeColor="YellowGreen" />
+                                        <StaticMenuItemStyle CssClass="menuItem" ForeColor="white" />
+                                        <DynamicMenuItemStyle CssClass="menuItem1" ForeColor="white" />
+                                        <DynamicMenuStyle CssClass="submenu" ForeColor="Black" />
+                                        <DynamicHoverStyle CssClass="hoverstyle" ForeColor="Teal" Font-Bold="true" />
+                                        <StaticSelectedStyle ForeColor="Black" />
+                                    </asp:Menu></div>
+                <div class="col-xl-1 col-sm-1 col-md-1 col-lg-1"><asp:HyperLink ID="hprlSwitchRole" runat="server" NavigateUrl="~/MainHome.aspx" Font-Bold="True" CssClass="labelwhite" ForeColor="YellowGreen">Switch Role</asp:HyperLink></div>
+                <div class=" col-xl-3 col-sm-3 col-md-3 col-lg-3"> <span class="labelwhite">Welcome </span><%--<asp:Image ID="Image2" ImageUrl="~/images/user.png" Height="22px" runat="server" BackColor="White" />--%>
+
+                                    <asp:Label ID="lblusername" runat="server" Font-Bold="True" CssClass="labelwhitebold_w" ForeColor="WhiteSmoke"></asp:Label>
+                                    <asp:Label ID="lblRoleName" runat="server" Font-Bold="True" CssClass="labelwhitebold_w" ForeColor="WhiteSmoke"></asp:Label></div>
+            </div>
+            <div class="innerpagebg1 col-xl-12 col-sm-12 col-md-12 col-lg-12">
+             <fieldset>  
+             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                            </asp:ContentPlaceHolder> </fieldset></div></div>
+
+
+
+       <%--<div class="col-xl-12 col-sm-12 col-md-12 col-lg-12" ></div>--%>
+        
+            
+    </form><br /><br /><br />
+    <table width="100%">
+        <tr><td><br /><br /><br /><br /><br /> <br /><br /></td></tr>
+        <tr><td class="footer " style="text-align: center"> &nbsp;&nbsp;&nbsp;&nbsp;<%--Best viewed in 1024 X 768 resolution--%>
+                         <b> Please send your queries/Complaints to: help-opams@irel.co.in</b></td></tr></table> 
+</body>
+</html>

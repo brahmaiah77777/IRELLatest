@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IREL", "IREL.csproj", "{6C36EDD7-174A-46D1-A83C-0E8F54CD68DE}"
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 2
+		SccProjectName0 = \u0022$/IREL/IREL\u0022,\u0020EVUFAAAA
+		SccLocalPath0 = .
+		SccProvider0 = MSSCCI:Microsoft\u0020Visual\u0020SourceSafe
+		CanCheckoutShared = false
+		SccProjectUniqueName1 = IREL.csproj
+		SccLocalPath1 = .
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6C36EDD7-174A-46D1-A83C-0E8F54CD68DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C36EDD7-174A-46D1-A83C-0E8F54CD68DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C36EDD7-174A-46D1-A83C-0E8F54CD68DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C36EDD7-174A-46D1-A83C-0E8F54CD68DE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
